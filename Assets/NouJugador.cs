@@ -9,6 +9,9 @@ public class NouJugador : MonoBehaviour
     private Vector2 minPantalla;
     private Vector2 maxPantalla;
 
+    [SerializeField]
+    private GameObject prefabProjectil;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,18 +33,31 @@ public class NouJugador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        MovimentNau();
+        DisparaProjectil();
+    }
 
+    private void MovimentNau()
+    {
         float DirX = Input.GetAxisRaw("Horizontal");
         float DirY = Input.GetAxisRaw("Vertical");
 
         //Debug.Log("X: " + DirX + " + Y: " + DirY);
 
-        Vector2 Dir = new Vector2 (DirX, DirY).normalized;
+        Vector2 Dir = new Vector2(DirX, DirY).normalized;
         Vector2 NewPos = transform.position;
         NewPos = NewPos + Dir * _vel * Time.deltaTime;
         NewPos.x = Mathf.Clamp(NewPos.x, minPantalla.x, maxPantalla.x);
         NewPos.y = Mathf.Clamp(NewPos.y, minPantalla.y, maxPantalla.y);
         transform.position = NewPos;
+    }
 
+    private void DisparaProjectil()
+    {
+        if (Input.GetKey("space"))
+        {
+            GameObject Projectil = Instantiate(prefabProjectil);
+            Projectil.transform.position = transform.position;
+        }
     }
 }
