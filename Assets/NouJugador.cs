@@ -5,7 +5,7 @@ using UnityEngine;
 public class NouJugador : MonoBehaviour
 {
     private float _vel;
-
+    
     private Vector2 minPantalla;
     private Vector2 maxPantalla;
 
@@ -54,7 +54,7 @@ public class NouJugador : MonoBehaviour
 
     private void DisparaProjectil()
     {
-        if (Input.GetKey("space"))
+        if (Input.GetKeyDown("space"))
         {
             GameObject Projectil = Instantiate(prefabProjectil);
             Projectil.transform.position = transform.position;
