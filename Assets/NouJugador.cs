@@ -52,6 +52,14 @@ public class NouJugador : MonoBehaviour
         transform.position = NewPos;
     }
 
+    private void OnTriggerEnter2D(Collider2D objecteTocat)
+    {
+        if (objecteTocat.tag == "Numero")
+        {
+            Destroy(gameObject);
+        }
+    }
+
     private void DisparaProjectil()
     {
         if (Input.GetKeyDown("space"))

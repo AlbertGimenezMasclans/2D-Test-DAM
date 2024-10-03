@@ -11,10 +11,12 @@ GameObject:
   - component: {fileID: 3118328822306574066}
   - component: {fileID: 7104439763435497027}
   - component: {fileID: 8385164197345461134}
+  - component: {fileID: -6574859235411067046}
+  - component: {fileID: -457347962513192012}
   m_Layer: 0
   m_Name: Numero
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_TagString: Numero
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -97,3 +99,86 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a7461aff3016574f9bbc41c3bfcf537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteNumeros:
+  - {fileID: 21300000, guid: 214dcaa218618074a8497bcb95ded358, type: 3}
+  - {fileID: 21300000, guid: b1996d02c17a3a744a496fc1833dd027, type: 3}
+  - {fileID: 21300000, guid: ad4deffe42057794a91ce53a6d4b43b3, type: 3}
+  - {fileID: 21300000, guid: 4fa95f9288063d84e8ad748937e7e206, type: 3}
+  - {fileID: 21300000, guid: d5ee9b2ceb56b2346b69ce80ab8491d3, type: 3}
+  - {fileID: 21300000, guid: 8fdfa903a78329447b7f033e0ba0d000, type: 3}
+  - {fileID: 21300000, guid: 75565ee6234a145479955f4bf08351f0, type: 3}
+  - {fileID: 21300000, guid: ba4c0bb77034a774eba2be50932c1898, type: 3}
+  - {fileID: 21300000, guid: b2509e576b172724a8d5d046df6c29b0, type: 3}
+  - {fileID: 21300000, guid: 92fc5343fbc934f4a81db1c30fe5ed16, type: 3}
+--- !u!61 &-6574859235411067046
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7817004490300349144}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!50 &-457347962513192012
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7817004490300349144}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
