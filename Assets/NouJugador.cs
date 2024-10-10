@@ -12,6 +12,7 @@ public class NouJugador : MonoBehaviour
     [SerializeField]
     private GameObject prefabProjectil;
 
+    [SerializeField] private GameObject prefabExplosio;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,6 +57,8 @@ public class NouJugador : MonoBehaviour
     {
         if (objecteTocat.tag == "Numero")
         {
+            GameObject explosio = Instantiate(prefabExplosio);
+            explosio.transform.position = transform.position;
             Destroy(gameObject);
         }
     }
